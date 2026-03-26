@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danfer School - Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700>family=Roboto:wght@400;500>display=swap" rel="stylesheet">
+</head>
+<body>    <a href="#main-content" class="skip-link">Skip to main content</a>    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>Danfer School</h1>
+            </div>
+            <nav class="navbar-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="elementary.html">Elementary</a></li>
+                    <li><a href="highschool.html">High School</a></li>
+                    <li><a href="notes.html" class="active">Notes</a></li>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="notes-section section fade-up">
+            <div class="container">
+                <h2>Study Notes</h2>
+                <p class="section-subtitle">Comprehensive study materials for all grade levels</p>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Notes</button>
+                    <button class="filter-btn" data-filter="elementary">Elementary (K-5)</button>
+                    <button class="filter-btn" data-filter="highschool">High School (9-12)</button>
+                </div>
+
+                <input type="text" id="search" placeholder="Search notes..." class="search-input">
+
+                <div class="cards" id="notes-cards">
+                    <!-- Elementary School Notes -->
+                    <div class="card note-card" data-subject="Mathematics" data-level="elementary">
+                        <!-- ELEMENTARY SUBJECT IMAGE: Use an icon or PDF thumbnail for elementary math -->
+                        <img src="https://images.unsplash.com/photo-1632559646285-b1a457bc5b96?q=80&w=150&auto=format&fit=crop" alt="Math Notes Thumbnail" class="subject-image">
+                        <h4>Basic Math Operations</h4>
+                        <p class="level-badge elementary-badge">Elementary</p>
+                        <p>Fundamental addition, subtraction, multiplication, and division concepts.</p>
+                        <a href="#" class="btn btn-accent">Download</a>
+                    </div>
+                    <div class="card note-card" data-subject="Science" data-level="elementary">
+                        <!-- ELEMENTARY SUBJECT IMAGE: Use an icon or PDF thumbnail for elementary science -->
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=150&auto=format&fit=crop" alt="Science Notes Thumbnail" class="subject-image">
+                        <h4>Earth & Space Science</h4>
+                        <p class="level-badge elementary-badge">Elementary</p>
+                        <p>Introduction to planets, weather, and our solar system.</p>
+                        <a href="#" class="btn btn-accent">Download</a>
+                    </div>
+                    <div class="card note-card" data-subject="Reading" data-level="elementary">
+                        <!-- ELEMENTARY SUBJECT IMAGE: Use an icon or PDF thumbnail for elementary reading -->
+                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=150&auto=format&fit=crop" alt="Reading Notes Thumbnail" class="subject-image">
+                        <h4>Reading Comprehension</h4>
+                        <p class="level-badge elementary-badge">Elementary</p>
+                        <p>Building reading skills and understanding story elements.</p>
+                        <a href="#" class="btn btn-accent">Download</a>
+                    </div>
+
+                    <!-- High School Notes -->
+                    <div class="card note-card" data-subject="Mathematics" data-level="highschool">
+                        <!-- HIGH SCHOOL SUBJECT IMAGE: Use an icon or PDF thumbnail for high school math -->
+                        <img src="https://images.unsplash.com/photo-1632559646285-b1a457bc5b96?q=80&w=150&auto=format&fit=crop" alt="Advanced Algebra Thumbnail" class="subject-image">
+                        <h4>Advanced Algebra</h4>
+                        <p class="level-badge highschool-badge">High School</p>
+                        <p>Complex equations, functions, and algebraic manipulations.</p>
+                        <a href="#" class="btn btn-accent">Download</a>
+                    </div>
+                    <div class="card note-card" data-subject="Science" data-level="highschool">
+                        <!-- HIGH SCHOOL SUBJECT IMAGE: Use an icon or PDF thumbnail for high school science -->
+                        <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=150&auto=format&fit=crop" alt="Biology Notes Thumbnail" class="subject-image">
+                        <h4>Biology Fundamentals</h4>
+                        <p class="level-badge highschool-badge">High School</p>
+                        <p>Cell structure, genetics, and biological systems.</p>
+                        <a href="#" class="btn btn-accent">Download</a>
+                    </div>
+                    <div class="card note-card" data-subject="History" data-level="highschool">
+                        <!-- HIGH SCHOOL SUBJECT IMAGE: Use an icon or PDF thumbnail for high school history -->
+                        <img src="https://images.unsplash.com/photo-1461360228753-a511be18ea0b?q=80&w=150&auto=format&fit=crop" alt="World History Notes Thumbnail" class="subject-image">
+                        <h4>World History</h4>
+                        <p class="level-badge highschool-badge">High School</p>
+                        <p>Key events and civilizations from ancient to modern times.</p>
+                        <a href="#" class="btn btn-accent">Download</a>
+                    </div>
+                    <div class="card note-card" data-subject="Chemistry" data-level="highschool">
+                        <!-- HIGH SCHOOL SUBJECT IMAGE: Use an icon or PDF thumbnail for high school chemistry -->
+                        <img src="https://images.unsplash.com/photo-1620021619866-50de2f2bf2c6?q=80&w=150&auto=format&fit=crop" alt="Chemistry Notes Thumbnail" class="subject-image">
+                        <h4>Chemical Reactions</h4>
+                        <p class="level-badge highschool-badge">High School</p>
+                        <p>Understanding chemical equations and reaction types.</p>
+                        <a href="#" class="btn btn-accent">Download</a>
+                    </div>
+                    <div class="card note-card" data-subject="Physics" data-level="highschool">
+                        <!-- HIGH SCHOOL SUBJECT IMAGE: Use an icon or PDF thumbnail for high school physics -->
+                        <img src="https://images.unsplash.com/photo-1636466497217-26c8c9e01083?q=80&w=150&auto=format&fit=crop" alt="Physics Notes Thumbnail" class="subject-image">
+                        <h4>Mechanics & Motion</h4>
+                        <p class="level-badge highschool-badge">High School</p>
+                        <p>Forces, energy, and the laws of motion.</p>
+                        <a href="#" class="btn btn-accent">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>>copy; 2026 Danfer School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Notes search functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('search');
+            const cards = document.querySelectorAll('.note-card');
+
+            searchInput.addEventListener('input', function() {
+                const query = this.value.toLowerCase();
+                cards.forEach(card => {
+                    const subject = card.dataset.subject.toLowerCase();
+                    const title = card.querySelector('h4').textContent.toLowerCase();
+                    const desc = card.querySelector('p').textContent.toLowerCase();
+                    if (subject.includes(query) || title.includes(query) || desc.includes(query)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
