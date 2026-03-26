@@ -69,6 +69,11 @@
     </nav>
     <div class="nav-actions">
       <div id="google_translate_element" class="custom-translate"></div>
+      <div class="lang-switcher notranslate">
+        <button class="active-lang" data-lang="en">EN</button>
+        <button data-lang="am">አማ</button>
+        <button data-lang="om">OR</button>
+      </div>
       <a href="admissions.html" class="btn btn-primary">Apply Now</a>
     </div>
     <button id="menuToggle" class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
@@ -323,5 +328,25 @@
     }
   </script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+    // Custom Language Switcher
+    document.addEventListener('DOMContentLoaded', () => {
+      const langBtns = document.querySelectorAll('.lang-switcher button');
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const lang = btn.getAttribute('data-lang');
+          langBtns.forEach(b => b.classList.remove('active-lang'));
+          btn.classList.add('active-lang');
+          // Trigger Google Translate
+          const select = document.querySelector('.goog-te-combo');
+          if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
