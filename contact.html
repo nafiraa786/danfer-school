@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danfer School - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700>family=Roboto:wght@400;500>display=swap" rel="stylesheet">
+</head>
+<body>    <a href="#main-content" class="skip-link">Skip to main content</a>    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>Danfer School</h1>
+            </div>
+            <nav class="navbar-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="elementary.html">Elementary</a></li>
+                    <li><a href="highschool.html">High School</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="contact-section section fade-up">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        <div class="info-item">
+                            <strong>Address:</strong> 123 Education Street, Learning City, LC 12345
+                        </div>
+                        <div class="info-item">
+                            <strong>Phone:</strong> (555) 123-4567
+                        </div>
+                        <div class="info-item">
+                            <strong>Email:</strong> info@danferschool.edu
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>>copy; 2026 Danfer School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
